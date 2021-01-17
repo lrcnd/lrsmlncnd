@@ -21,7 +21,7 @@ img {
     vertical-align: middle;
 }
 
-header {
+header, footer {
   text-align: center;
   padding: 0.5rem;
 }
@@ -33,7 +33,7 @@ header {
 
 
 main section {
-    --auto-grid-min-size: 19rem;
+    --auto-grid-min-size: 24rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
     height: 100%;
