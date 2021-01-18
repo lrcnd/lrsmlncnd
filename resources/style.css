@@ -40,9 +40,9 @@ footer img {
 
 
 main section {
-    --auto-grid-min-size: 19rem;
+    
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
     height: 100%;
     gap: 0.5rem;
     padding: 0.5rem;
@@ -75,7 +75,10 @@ footer {
 
 @media only screen and (min-width:320px) and (max-width:480px) {
   
-   
+    header p {
+        font-size: 0.8rem;
+    }
+
     main section {
         
         grid-template-columns: 1fr 1fr;
