@@ -73,9 +73,13 @@ footer {
     text-align: center;
 }
 
+footer img#cindy {
+    vertical-align: text-top;
+}
+
 @media only screen and (min-width:320px) and (max-width:480px) {
   
-    header p {
+    header p, .sold {
         font-size: 0.8rem;
     }
 
@@ -89,6 +93,10 @@ footer {
         height: 1.5rem;
     }
 
+    footer img#cindy {
+        vertical-align: text-top;
+        margin-top: 3px;
+    }
 
     
   }
