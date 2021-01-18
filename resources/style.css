@@ -29,31 +29,34 @@ header, footer {
 /* right side*/
 
 
+header img {
+    height:3.5rem;
+    margin:0.5rem;
+}
 
+footer img {
+    height:2.5rem;
+}
 
 
 main section {
-    --auto-grid-min-size: 24rem;
+    
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
     height: 100%;
     gap: 0.5rem;
     padding: 0.5rem;
 
 }
 
-article {
+main section article {
     position: relative;
 }
 
 p {
     margin: 0.5rem 0 0.5rem 0;
 }
-section article:nth-of-type(1) {
-    align-self: center;
-    font-size: 1.5rem;
-    
-}
+
 
 
 
@@ -69,3 +72,31 @@ section article:nth-of-type(1) {
 footer {
     text-align: center;
 }
+
+footer img#cindy {
+    vertical-align: text-top;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  
+    header p, .sold {
+        font-size: 0.8rem;
+    }
+
+    main section {
+        
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    footer img {
+        height: 1.5rem;
+    }
+
+    footer img#cindy {
+        vertical-align: text-top;
+        margin-top: 3px;
+    }
+
+    
+  }
