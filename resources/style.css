@@ -77,8 +77,8 @@ footer {
   
    
     main section {
-        --auto-grid-min-size: 11rem;
-        align-items: center;
+        
+        grid-template-columns: 1fr 1fr;
         
     }
 
