@@ -59,6 +59,10 @@ header img {
     margin:var(--s-1);
 }
 
+header article {
+    margin:var(--s0);
+}
+
 main section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
@@ -77,7 +81,7 @@ p {
 
 .sold {
     margin: var(--s-1);
-    opacity: 0;
+    opacity: 0.4;
     position: absolute;
     right:0;
     color:#fff;
